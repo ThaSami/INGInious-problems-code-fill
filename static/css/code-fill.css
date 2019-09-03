@@ -1,0 +1,6 @@
+.CodeMirror pre span {
+    display: inline-block;
+}
+.CodeMirror pre span.read-only {
+    background: #8882;
+}
