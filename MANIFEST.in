@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include inginious-problems-code-fill/static *
+recursive-include inginious-problems-code-fill/templates *
