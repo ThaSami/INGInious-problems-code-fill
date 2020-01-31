@@ -23,7 +23,7 @@ class CodeFillProblem(CodeProblem):
     """
 
     @classmethod
-    def get_type(self):
+    def get_type(cls):
         return "code_fill"
 
     @classmethod
@@ -52,7 +52,7 @@ class DisplayableCodeFillProblem(CodeFillProblem, DisplayableCodeProblem):
 
     @classmethod
     def get_type_name(self, gettext):
-        return gettext("code-fill")
+        return "code-fill"
 
     @classmethod
     def get_renderer(cls, template_helper):
@@ -69,7 +69,7 @@ class DisplayableCodeFillProblem(CodeFillProblem, DisplayableCodeProblem):
         return str(DisplayableCodeFillProblem.get_renderer(template_helper).tasks.code_fill(self.get_id(), header, 8, 0, self._language, self._optional, self._default))
 
     @classmethod
-    def show_editbox_templates(cls, template_helper, key):
+    def show_editbox(cls, template_helper, key, language):
         return ""
 
     def adapt_input_for_backend(self, input_data):
